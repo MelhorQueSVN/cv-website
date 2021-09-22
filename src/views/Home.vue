@@ -84,7 +84,7 @@
                       <h2 class="aboutMeTextColor"> An aspiring web developer </h2>
 
                       <h3 class="aboutMeTextColor text-left pt-6"> Info </h3>
-                      <v-divider> </v-divider>
+                      <v-divider class="dividerColorWhite"> </v-divider>
 
                       <!-- EMAIL -->
                       <v-row class="pt-3" align="center">
@@ -185,7 +185,7 @@
                       </v-row>
 
                       <h3 class="aboutMeTextColor text-left pt-6"> You can also find me on </h3>
-                      <v-divider> </v-divider>
+                      <v-divider class="dividerColorWhite"> </v-divider>
 
                       <v-row> 
                         
@@ -216,7 +216,7 @@
                       </v-row>
 
                       <h3 class="aboutMeTextColor text-left pt-3"> Things I enjoy in my free time </h3>
-                      <v-divider> </v-divider> 
+                      <v-divider class="dividerColorWhite"> </v-divider> 
 
                       <!-- 1a fila de hobbies -->
                       <v-row class="pt-3"> 
@@ -300,7 +300,7 @@
                       </v-row>
 
                       <h3 class="aboutMeTextColor text-left pt-3"> Languages </h3>
-                      <v-divider> </v-divider> 
+                      <v-divider class="dividerColorWhite"> </v-divider> 
 
                       <v-row class="pt-3"> 
 
@@ -349,7 +349,32 @@
                     </v-col>
 
                     <v-col cols="12" class="aboutMesecondColColor" md="8">
-                      merda
+
+                        <v-row> 
+                          <v-col class="text-left"> 
+                              <h4> About Me </h4>
+                          </v-col>
+                        </v-row> 
+                        <!-- Consoante o tamanho do ecrã muda o width -->
+                        <v-divider v-if="$vuetify.breakpoint.smAndDown" width="30%" class="dividerColorBlack"> </v-divider> 
+                        <v-divider v-else width="10%" class="dividerColorBlack"> </v-divider> 
+                        
+                        <v-row class="pt-6"> 
+                          <v-col class="text-left"> 
+                              <p> My name is João Nunes, and I'm a software developer currently finishing masters degree in Informatics Engineering at Universidade do Minho in Portugal.</p>
+                              <p> I opted to choose Intelligent Systems as well as Knowledge Engineering as my Msc profiles. The first profile can be characterized as a machine learning course, 
+                                where a lot of focus was given to the standard machine learning algorithms wether they be supervised or unsupervised. As well as machine learning, the profile also 
+                                focused on the creation of multiagent systems, where communication between agents was imperious. The second profile essentialy focused on teaching the principles in 
+                                database exploration and administration. 
+                              </p>
+                              <p>
+                                  In regards to my thesis, which I'm currently finishing it, the goal of my thesis is to develop an extraction tool, using machine learning, in order to filter all the desired 
+                                  data from various documents. After extracting the data, the data is strucutured in the form of an ontology. A simple website was then constructed in order to query
+                                  all the data within the ontology.
+                              </p>
+                          </v-col>
+                        </v-row> 
+
                     </v-col>
 
                   </v-row>
@@ -428,8 +453,14 @@ export default {
   color : white
 }
 
-.theme--light.v-divider {
+.dividerColorWhite {
     border-color: rgb(255, 252, 252) !important; 
 }
+
+.dividerColorBlack {
+    border-color: rgb(0, 0, 0) !important; 
+}
+
+
 
 </style>
