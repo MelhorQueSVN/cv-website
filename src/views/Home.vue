@@ -525,46 +525,54 @@
                       </v-img>
                     </v-hover>
                   </v-col>
-
-                  <v-col cols="12" md="6"> 
-                    <v-hover v-slot="{ hover }">
-                      <v-img
-                        :src="gallery[2].source"
-                        :lazy-src="gallery[2].source"
-                        aspect-ratio="2"
-                      > 
-                        <v-expand-transition>
-                          <div
-                            v-if="hover"
-                            class="d-flex transition-fast-in-fast-out green darken-2 v-card--reveal display-3 white--text"
-                            style="height: 100%;"
-                          >
-                            {{gallery[2].description}}
-                          </div>
-                        </v-expand-transition>
-                      </v-img>
-                    </v-hover>
-
-                  <v-col cols="12" md="12"> 
-                    <v-hover v-slot="{ hover }">
-                      <v-img
-                        :src="gallery[4].source"
-                        :lazy-src="gallery[4].source"
-                        aspect-ratio="2"
-                      > 
-                        <v-expand-transition>
-                          <div
-                            v-if="hover"
-                            class="d-flex transition-fast-in-fast-out green darken-2 v-card--reveal display-3 white--text"
-                            style="height: 100%;"
-                          >
-                            {{gallery[4].description}}
-                          </div>
-                        </v-expand-transition>
-                      </v-img>
-                    </v-hover>
-                  </v-col>
                   
+                  <!-- Uma coluna dividida em 2 linhas para cada imagem -->
+                  <v-col cols="12" md="6"> 
+                    
+                    <v-row> 
+                      <v-col>
+                        <v-hover v-slot="{ hover }">
+                          <v-img
+                            :src="gallery[2].source"
+                            :lazy-src="gallery[2].source"
+                            aspect-ratio="2"
+                          > 
+                            <v-expand-transition>
+                              <div
+                                v-if="hover"
+                                class="d-flex transition-fast-in-fast-out green darken-2 v-card--reveal display-3 white--text"
+                                style="height: 100%;"
+                              >
+                                {{gallery[2].description}}
+                              </div>
+                            </v-expand-transition>
+                          </v-img>
+                        </v-hover> 
+                      </v-col>
+                    </v-row>
+
+                    <v-row> 
+                      <v-col>
+                        <v-hover v-slot="{ hover }">
+                          <v-img
+                            :src="gallery[4].source"
+                            :lazy-src="gallery[4].source"
+                            aspect-ratio="2"
+                          > 
+                            <v-expand-transition>
+                              <div
+                                v-if="hover"
+                                class="d-flex transition-fast-in-fast-out green darken-2 v-card--reveal display-3 white--text"
+                                style="height: 100%;"
+                              >
+                                {{gallery[4].description}}
+                              </div>
+                            </v-expand-transition>
+                          </v-img>
+                        </v-hover>
+                      </v-col>
+                    </v-row>
+
                   </v-col>
 
                   <v-col cols="12" md="6"> 
