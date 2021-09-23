@@ -65,7 +65,7 @@
 
       <section id="about-me">
           <!-- Adiciona padding em cima e baixo --> 
-          <div class="pt-12 pb-12"> 
+          <div class="pt-12"> 
               <v-container class="text-center">
                   
                   <v-row justify="center"> 
@@ -356,8 +356,8 @@
                           </v-col>
                         </v-row> 
                         <!-- Consoante o tamanho do ecrã muda o width -->
-                        <v-divider v-if="$vuetify.breakpoint.smAndDown" width="30%" class="dividerColorBlack"> </v-divider> 
-                        <v-divider v-else width="10%" class="dividerColorBlack"> </v-divider> 
+                        <v-divider v-if="$vuetify.breakpoint.smAndDown" width="30%" > </v-divider> 
+                        <v-divider v-else width="10%" > </v-divider> 
                         
                         <v-row class="pt-6"> 
                           <v-col class="text-left"> 
@@ -382,8 +382,8 @@
                           </v-col>
                         </v-row> 
                         <!-- Consoante o tamanho do ecrã muda o width -->
-                        <v-divider v-if="$vuetify.breakpoint.smAndDown" width="30%" class="dividerColorBlack"> </v-divider> 
-                        <v-divider v-else width="10%" class="dividerColorBlack"> </v-divider> 
+                        <v-divider v-if="$vuetify.breakpoint.smAndDown" width="30%" > </v-divider> 
+                        <v-divider v-else width="10%" > </v-divider> 
                         
                         <v-row class="pt-6"> 
                           <v-col cols="4" md="2" class="text-left"> 
@@ -415,8 +415,8 @@
                           </v-col>
                         </v-row> 
                         <!-- Consoante o tamanho do ecrã muda o width -->
-                        <v-divider v-if="$vuetify.breakpoint.smAndDown" width="70%" class="dividerColorBlack"> </v-divider> 
-                        <v-divider v-else width="25%" class="dividerColorBlack"> </v-divider> 
+                        <v-divider v-if="$vuetify.breakpoint.smAndDown" width="70%" > </v-divider> 
+                        <v-divider v-else width="25%" > </v-divider> 
                         
                         <!-- Em ecrãs pequenos cada coluna ocupa o tamanho todo, em ecrãs maiores ocupa 50%-->
                         <v-row class="pt-6 text-left"> 
@@ -469,18 +469,131 @@
                               <p> Sql </p>
                                <v-progress-linear color="orange lighten-2" height="25" :value="valueSql"> <strong class="aboutMeTextColor"> {{valueSql + "%"}} </strong> </v-progress-linear>                         
                           </v-col>
-
-
-                        </v-row>
-
-                    
+                        </v-row>                    
                     </v-col>
-
                   </v-row>
+            </v-container> 
+          </div>     
+      </section>
 
-              </v-container> 
-          </div>
-      
+      <section id="works"> 
+          <v-container>
+            
+            <v-row justify="center">
+              <v-col cols="12" md="11" class="worksColor" align="center"> 
+                <h2> Some of my works </h2>
+                <v-divider> </v-divider>
+
+                <v-row class="pt-6"> 
+                  
+                  <v-col cols="12" md="6"> 
+                    <v-hover v-slot="{ hover }">
+                      <v-img
+                        :src="gallery[0].source"
+                        :lazy-src="gallery[0].source"
+                        aspect-ratio="2"
+                      > 
+                        <v-expand-transition>
+                          <div
+                            v-if="hover"
+                            class="d-flex transition-fast-in-fast-out green darken-2 v-card--reveal display-3 white--text"
+                            style="height: 100%;"
+                          >
+                            {{gallery[0].description}}
+                          </div>
+                        </v-expand-transition>
+                      </v-img>
+                    </v-hover>
+                  </v-col>
+
+                  <v-col cols="12" md="6"> 
+                    <v-hover v-slot="{ hover }">
+                      <v-img
+                        :src="gallery[1].source"
+                        :lazy-src="gallery[1].source"
+                        aspect-ratio="2"
+                      > 
+                        <v-expand-transition>
+                          <div
+                            v-if="hover"
+                            class="d-flex transition-fast-in-fast-out green darken-2 v-card--reveal display-3 white--text"
+                            style="height: 100%;"
+                          >
+                            {{gallery[1].description}}
+                          </div>
+                        </v-expand-transition>
+                      </v-img>
+                    </v-hover>
+                  </v-col>
+
+                  <v-col cols="12" md="6"> 
+                    <v-hover v-slot="{ hover }">
+                      <v-img
+                        :src="gallery[2].source"
+                        :lazy-src="gallery[2].source"
+                        aspect-ratio="2"
+                      > 
+                        <v-expand-transition>
+                          <div
+                            v-if="hover"
+                            class="d-flex transition-fast-in-fast-out green darken-2 v-card--reveal display-3 white--text"
+                            style="height: 100%;"
+                          >
+                            {{gallery[2].description}}
+                          </div>
+                        </v-expand-transition>
+                      </v-img>
+                    </v-hover>
+
+                  <v-col cols="12" md="12"> 
+                    <v-hover v-slot="{ hover }">
+                      <v-img
+                        :src="gallery[4].source"
+                        :lazy-src="gallery[4].source"
+                        aspect-ratio="2"
+                      > 
+                        <v-expand-transition>
+                          <div
+                            v-if="hover"
+                            class="d-flex transition-fast-in-fast-out green darken-2 v-card--reveal display-3 white--text"
+                            style="height: 100%;"
+                          >
+                            {{gallery[4].description}}
+                          </div>
+                        </v-expand-transition>
+                      </v-img>
+                    </v-hover>
+                  </v-col>
+                  
+                  </v-col>
+
+                  <v-col cols="12" md="6"> 
+                    <v-hover v-slot="{ hover }">
+                      <v-img
+                        :src="gallery[3].source"
+                        :lazy-src="gallery[3].source"
+                        aspect-ratio="0"
+                        width="60%"
+                      > 
+                        <v-expand-transition>
+                          <div
+                            v-if="hover"
+                            class="d-flex transition-fast-in-fast-out green darken-2 v-card--reveal display-3 white--text"
+                            style="height: 100%;"
+                          >
+                            {{gallery[3].description}}
+                          </div>
+                        </v-expand-transition>
+                      </v-img>
+                    </v-hover>
+                  </v-col>
+             
+                </v-row>
+
+              </v-col>
+            </v-row>
+          
+          </v-container>
       </section>
 
   </div>
@@ -522,7 +635,14 @@ export default {
         valueCy : 0, 
         valueMongo : 0, 
         valueSql : 0, 
-        valueReactN : 0
+        valueReactN : 0, 
+        gallery : [
+          {id : '1', description : 'BettingSpree' , source : require('@/assets/1.png') },
+          {id : '2', description : 'Projeto Tommi' , source : require('@/assets/2.png') }, 
+          {id : '3', description : 'Pesquisa Remédios e os seus Ingredientes' , source : require('@/assets/3.png') }, 
+          {id : '4', description : 'Pesquisa Remédios e os seus Ingredients APP' , source : require('@/assets/4.gif') }, 
+          {id : '5', description : 'UV Forecast' , source : require('@/assets/5.png') },
+        ]
       }
     },
     beforeDestroy () {
@@ -638,6 +758,10 @@ export default {
 .aboutMesecondColColor { 
   background-color: #d8d8d8;
 } 
+
+.worksColor { 
+  background-color: #d3d2d2;  
+}
 
 .aboutMeTextColor { 
   color : white
