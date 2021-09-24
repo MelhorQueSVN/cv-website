@@ -1,65 +1,61 @@
 <template>
   <div class="home">
       
-      <section id="hero">             
-        <v-row no-gutters>
+      <section id="hero">     
+        <v-row no-gutters> 
+          
+          <!-- Só para dar fill -->
           <v-img
-            :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
-           :src="require('@/assets/splash-1.jpg')"
+            :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"   
           >
 
-            <Navbar />
-
-            <v-theme-provider dark>
-              <v-container fill-height>
-                <v-row
-                  align="center"
-                  class="white--text mx-auto"
-                  justify="center"
-                >
-                  <v-col
-                    class="white--text text-center"
-                    cols="12"
-                    tag="h1"
-                  >
-                    <span
+          <Navbar />
+          
+          <v-container fill-height>
+            <v-row>
+                <v-col cols="12" md="12" justify="center" align="center">
+                  <span
                     :class="[$vuetify.breakpoint.smAndDown ? 'display-3' : 'display-4']"
-                     class="font-weight-black"
-                    >
-                      João Nunes
-                    </span>
+                    class="font-weight-black"
+                  >
+                    João Nunes <br>
+                  </span>
 
-                    <br>
-
+                  <div class="pt-3">      
                     <span
                       :class="[$vuetify.breakpoint.smAndDown ? 'display-1': 'display-2']"
                       class="font-weight-light"
                     >
                       Software Engineer Student at Universidade do Minho <br>
-                    </span> 
-
+                    </span>
+                  </div>
+                  
+                  <div class="pt-3">        
                     <span
                       :class="[$vuetify.breakpoint.smAndDown ? 'display-0': 'display-1']"
                       class="font-weight-light"
                     >
-                      Hi I'm João Nunes and I'm currently finishing my masters degree and Universidade do Minho
-                    </span> 
+                      Hi I'm João Nunes and I'm currently finishing my masters degree and Universidade do Minho <br>
+                    </span>
+                  </div>
 
-                  </v-col>
-                  
-                  <v-btn
-                    class="align-self-end"
-                    fab
-                    outlined
-                    @click="$vuetify.goTo('#about-me')"
-                  >
-                    <v-icon>mdi-chevron-double-down</v-icon>
-                  </v-btn>
-                
-                </v-row>
-              </v-container>
-            </v-theme-provider>
+                  <div class="pt-3">  
+                    <v-btn
+                      class="align-self-end"
+                      fab
+                      outlined
+                      @click="$vuetify.goTo('#about-me')"
+                    >
+                      <v-icon>mdi-chevron-double-down</v-icon>
+                    </v-btn>
+                  </div>
+                </v-col>
+             
+            </v-row>
+         
+          </v-container>
           </v-img>
+        
         </v-row>
       </section>
 
