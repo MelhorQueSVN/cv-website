@@ -5,11 +5,13 @@
                     <v-col cols="12"  align="center" justify="center"> 
                         <v-btn text @click="$vuetify.goTo('#hero')"> Home </v-btn>
 
-                        <v-btn text @click="$vuetify.goTo('#about-me')"> About </v-btn>
+                        <v-btn text @click="$vuetify.goTo('#about-me')"> About me </v-btn>
 
-                        <v-btn text> Resume </v-btn>
+                        <v-btn text @click="$vuetify.goTo('#works')"> Works </v-btn>
 
-                        <v-btn text> Contact </v-btn>
+                        <v-btn text @click="$vuetify.goTo('#contact')"> Contact </v-btn>
+
+                        <v-btn text @click="$vuetify.goTo('#ending')"> Resume </v-btn>
 
                         <v-menu>
                             <template v-slot:activator="{ on, attrs }">
