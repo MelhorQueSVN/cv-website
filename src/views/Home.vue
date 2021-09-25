@@ -296,6 +296,68 @@
 
                       </v-row>
 
+                      <h3 class="aboutMeTextColor text-left pt-3"> Interpersonal skills </h3>
+                      <v-divider class="dividerColorWhite"> </v-divider>
+                      
+                      <v-row class="pt-3"> 
+                          
+                          <v-col cols="12" md="4">                          
+                            <v-btn color="white" small outlined rounded>
+                              Responsability
+                            </v-btn>                                                     
+                          </v-col>
+                          
+                          <v-col cols="12" md="8">       
+                            <v-btn color="white" small outlined rounded>
+                              Willing collaborator and team oriented
+                            </v-btn>                  
+                          </v-col>
+                        
+                      </v-row>
+
+                      <v-row>                          
+                          <v-col cols="12" md="4">                          
+                            <v-btn color="white" small outlined rounded>
+                              Clear communicator
+                            </v-btn>                                                     
+                          </v-col>
+                          
+                          <v-col cols="12" md="8">       
+                            <v-btn color="white" small outlined rounded>
+                              Acceptive of constructive feedback
+                            </v-btn>                  
+                          </v-col>
+                      </v-row>
+
+
+                      <v-row>                        
+                          <v-col cols="12" md="6">                          
+                            <v-btn color="white" small outlined rounded>
+                              Flexible and very willing to learn
+                            </v-btn>                                                     
+                          </v-col>
+                          
+                          <v-col cols="12" md="6">       
+                            <v-btn color="white" small outlined rounded>
+                              Humor and lightheartedness
+                            </v-btn>                  
+                          </v-col>                       
+                      </v-row>
+
+                      <v-row>                        
+                          <v-col cols="12" md="4">                          
+                            <v-btn color="white" small outlined rounded>
+                              Good listener
+                            </v-btn>                                                     
+                          </v-col>
+                          
+                          <v-col cols="12" md="6">       
+                            <v-btn color="white" small outlined rounded>
+                              Patient when dealing with others
+                            </v-btn>                  
+                          </v-col>                       
+                      </v-row>
+
                       <h3 class="aboutMeTextColor text-left pt-3"> Languages </h3>
                       <v-divider class="dividerColorWhite"> </v-divider> 
 
@@ -404,6 +466,33 @@
                           </v-col>                     
                         </v-row> 
 
+
+                        <!-- Experience -->
+                        <v-row> 
+                          <v-col class="text-left"> 
+                              <h4> Experience </h4>
+                          </v-col>
+                        </v-row> 
+                        <!-- Consoante o tamanho do ecrã muda o width -->
+                        <v-divider v-if="$vuetify.breakpoint.smAndDown" width="30%" > </v-divider> 
+                        <v-divider v-else width="10%" > </v-divider> 
+                        
+                        <v-row class="pt-6"> 
+                          <v-col cols="4" md="2" class="text-left"> 
+                            <p> 2019-2020 </p>
+                          </v-col>
+
+                          <v-col cols="8" md="10" class="text-left"> 
+                            <p> CeSIUM - Centro de Estudantes da Universidade do Minho </p> 
+                            <p> Cooperator in the Pedagogical Department </p>
+                           
+                            <v-col class="mt-0 pt-0"> 
+                              <p> &#8226; Provided assistance to students from previous years; </p>
+                              <p> &#8226; Helped to organize some activities. </p>
+                            </v-col>
+                          
+                          </v-col>                     
+                        </v-row> 
 
                         <!-- Skills -->
                         <v-row> 
@@ -626,6 +715,74 @@
             </v-row>
           </v-container>
       </section>
+
+
+      <section id="ending"> 
+        <v-row no-gutters> 
+          
+          <!-- Só para dar fill -->
+          <v-img
+            :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"   
+          >
+          
+          <v-container fill-height>
+            <v-row>
+                <v-col cols="12" md="12" justify="center" align="center">
+                  <span
+                    :class="[$vuetify.breakpoint.smAndDown ? 'display-3' : 'display-4']"
+                    class="font-weight-black"
+                  >
+                    Thank you<br>
+                  </span>
+                  
+                  <div class="pt-3">        
+                    <span
+                      :class="[$vuetify.breakpoint.smAndDown ? 'display-0': 'display-1']"
+                      class="font-weight-light"
+                    >
+                      You can download the full curriculum <br>
+                    </span>
+                  </div>
+
+                  <div class="pt-3">        
+                    
+                    <v-btn text> 
+                      Português 
+                      <v-icon right>
+                        mdi-file-pdf-box 
+                      </v-icon>
+                    </v-btn>
+                    
+                    <v-btn text> 
+                      English
+                      <v-icon right>
+                        mdi-file-pdf-box 
+                      </v-icon> 
+                    </v-btn>
+                  
+                  </div>
+
+                  <div class="pt-3">  
+                    <v-btn
+                      class="align-self-end"
+                      fab
+                      outlined
+                      @click="$vuetify.goTo('#hero')"
+                    >
+                      <v-icon>mdi-chevron-double-up</v-icon>
+                    </v-btn>
+                  </div>
+                </v-col>
+             
+            </v-row>
+         
+          </v-container>
+          </v-img>
+        
+        </v-row>
+      </section>
+
+
   </div>
 </template>
 
