@@ -611,13 +611,14 @@
 
                 <v-row class="pt-6"> 
                   <v-col> 
-                    <ContactForm @sucess="openAlert" />
+                    <ContactForm @sucess="openAlertSucess" @failure="openAlertFailure "/>
                   </v-col> 
                 </v-row>
 
                 <v-row justify="center">
                   <v-col cols="12" md="4">
-                    <v-alert v-if="showAlert" type="success" dismissible> Sucesso a mandar o email!</v-alert>
+                    <v-alert v-model="showAlertSucess" type="success" dismissible @input="closeSucess"> Sucess sending the email!</v-alert>
+                    <v-alert v-model="showAlertFailure" type="error" dismissible @input="closeFailure"> Failed to send the email, please confirm all the fields!</v-alert>
                   </v-col>
                 </v-row>
               
@@ -674,7 +675,8 @@ export default {
           {id : '4', description : 'Pesquisa Remédios e os seus Ingredients APP<br>A complimentary piece to the website, built using React Native. ' , source : require('@/assets/4.gif') }, 
           {id : '5', description : 'UV Forecast<br>Website that was constructed with two goals in mind, one to fetch data from an external API and show it on screen in an orderly fashing, and the other to display the results, daily, of the machine learning algorithm implemented in order to predict for each district the UV rating. A Recurrent Neural Network (LSTM) was implemented and trained in order to predict the target.' , source : require('@/assets/5.png') },
         ], 
-        showAlert: false
+        showAlertSucess: false, 
+        showAlertFailure : false
       }
     },
     beforeDestroy () {
@@ -777,9 +779,21 @@ export default {
     }, 
 
     methods : { 
-        openAlert() { 
+        openAlertSucess() { 
           console.log("RECEBI EVENTO DE SUCESSO")
-          this.showAlert = true
+          this.showAlertSucess = true
+        }, 
+        openAlertFailure() { 
+          console.log("RECEBI EVENTO DE INSUCESSO")
+          this.showAlertFailure = true         
+        },
+        closeSucess() { 
+          console.log("FECHEI ALERT SUCESSO")
+          this.showAlertSucess = false
+        }, 
+        closeFailure() { 
+          console.log("FECHEI ALERT FAILURE")
+          this.showAlertFailure = false
         }
     }
 }
