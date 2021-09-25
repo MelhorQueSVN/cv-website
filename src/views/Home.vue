@@ -493,7 +493,7 @@
                         <v-expand-transition>
                           <div
                             v-if="hover"
-                            class="d-flex transition-fast-in-fast-out hoverTransitionColors darken-2 v-card--reveal display-1 white--text"
+                            class="d-flex transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
                             style="height: 100%;"
                             v-html="gallery[0].description"
                           >
@@ -601,17 +601,43 @@
           </v-container>
       </section>
 
+
+      <section id="contact"> 
+          <v-container>          
+            <v-row justify="center">
+              <v-col cols="12" md="11" class="aboutMefirstColColor" align="center"> 
+                <h2 class="contactTextColor"> Contact Me </h2>
+                <v-divider class="dividerColorWhite"> </v-divider>
+
+                <v-row class="pt-6"> 
+                  <v-col> 
+                    <ContactForm @sucess="openAlert" />
+                  </v-col> 
+                </v-row>
+
+                <v-row justify="center">
+                  <v-col cols="12" md="4">
+                    <v-alert v-if="showAlert" type="success" dismissible> Sucesso a mandar o email!</v-alert>
+                  </v-col>
+                </v-row>
+              
+              </v-col>
+            </v-row>
+          </v-container>
+      </section>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Navbar from '@/components/Navbar.vue'
+import ContactForm from '@/components/ContactForm.vue'
 
 export default {
   name: 'Home',
   components : { 
-    Navbar
+    Navbar, 
+    ContactForm
   }, 
   data () {
       return {
@@ -647,7 +673,8 @@ export default {
           {id : '3', description : 'Pesquisa Remédios e os seus Ingredientes<br>A search engine that was built in order to let the users search and comb through a collection of recipes dating also to the 17th century. Two main ways to query the data, either inputting recipe names or ingredient names. Along with the interface a collection of microservices were also implemented in the backend.' , source : require('@/assets/3.png') }, 
           {id : '4', description : 'Pesquisa Remédios e os seus Ingredients APP<br>A complimentary piece to the website, built using React Native. ' , source : require('@/assets/4.gif') }, 
           {id : '5', description : 'UV Forecast<br>Website that was constructed with two goals in mind, one to fetch data from an external API and show it on screen in an orderly fashing, and the other to display the results, daily, of the machine learning algorithm implemented in order to predict for each district the UV rating. A Recurrent Neural Network (LSTM) was implemented and trained in order to predict the target.' , source : require('@/assets/5.png') },
-        ]
+        ], 
+        showAlert: false
       }
     },
     beforeDestroy () {
@@ -747,7 +774,14 @@ export default {
         this.valueReactN += 10
       }, 800)
 
-    },
+    }, 
+
+    methods : { 
+        openAlert() { 
+          console.log("RECEBI EVENTO DE SUCESSO")
+          this.showAlert = true
+        }
+    }
 }
 </script> 
 
@@ -770,7 +804,15 @@ export default {
   background-color: #d3d2d2;  
 }
 
+.alertColor { 
+  background-color: #2fd80d;  
+}
+
 .aboutMeTextColor { 
+  color : white
+}
+
+.contactTextColor { 
   color : white
 }
 
