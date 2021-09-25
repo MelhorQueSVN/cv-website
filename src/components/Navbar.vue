@@ -3,7 +3,6 @@
                 <v-row> 
                     <!-- 11 cols dedicadas para os 4 principais e 1 para a escolha da linguagem -->
                     <v-col cols="12"  align="center" justify="center"> 
-                        <v-btn text @click="$vuetify.goTo('#hero')"> Home </v-btn>
 
                         <v-btn text @click="$vuetify.goTo('#about-me')"> About me </v-btn>
 
