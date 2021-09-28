@@ -52,6 +52,15 @@
           "title" : "Education", 
           "course_sec" : "Sciences and Technologies", 
           "degree" : "Integrated Masters Degree in Informatics Engineering"
+        }, 
+        "experience" : { 
+          "title" : "Experience", 
+          "collab" : "Collaborator in the Pedagogical Department", 
+          "first_expl" : "Provided assistance to students from previous years;", 
+          "second_expl" : "Helped to organize some activities."
+        }, 
+        "skills" : { 
+          "title" : "Skills and Main Expertize"
         }
       }
   }

@@ -4,7 +4,7 @@
         <!-- Skills -->
         <v-row> 
           <v-col class="text-left"> 
-              <h4> Skills and Main Expertize </h4>
+              <h4> {{ $t('aboutme.mainbar.skills.title') }} </h4>
           </v-col>
         </v-row> 
         

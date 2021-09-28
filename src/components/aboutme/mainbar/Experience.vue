@@ -4,7 +4,7 @@
         <!-- Experience -->
         <v-row> 
           <v-col class="text-left"> 
-              <h4> Experience </h4>
+              <h4> {{ $t('aboutme.mainbar.experience.title') }} </h4>
           </v-col>
         </v-row> 
         
@@ -20,11 +20,11 @@
           
           <v-col cols="8" md="10" class="text-left"> 
             <p> CeSIUM - Centro de Estudantes da Universidade do Minho </p> 
-            <p> Cooperator in the Pedagogical Department </p>
+            <p> {{ $t('aboutme.mainbar.experience.collab') }} </p>
            
             <v-col class="mt-0 pt-0"> 
-              <p> &#8226; Provided assistance to students from previous years; </p>
-              <p> &#8226; Helped to organize some activities. </p>
+              <p> &#8226; {{ $t('aboutme.mainbar.experience.first_expl') }} </p>
+              <p> &#8226; {{ $t('aboutme.mainbar.experience.second_expl') }} </p>
             </v-col>
           
           </v-col>                     
