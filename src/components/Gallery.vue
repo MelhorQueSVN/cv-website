@@ -125,27 +125,27 @@ export default {
                 {
                     id : '1', 
                     description : 'Betting Spree<br>A social network dedicated to the betting enviroment, completed with a bookmaker where users could make and then share the bets that they made in groups or with friends. The shared bets could then be copied should the user want to. The bookmaker data was fetched each day from an external API through a dedicated service created to that effect.', 
-                    source : require('@/assets/1.png') 
+                    source : require('@/assets/pictures/1.png') 
                 },
                 {
                     id : '2', 
                     description : 'Projeto Tommi<br>A search engine interface built with the intent on easily letting users search through a large collection of documents dating to the 17th century. Multiple to query and explore the data were constructed, along with a comprehensive results page.', 
-                    source : require('@/assets/2.png') 
+                    source : require('@/assets/pictures/2.png') 
                 }, 
                 {
                     id : '3', 
                     description : 'Pesquisa Remédios e os seus Ingredientes<br>A search engine that was built in order to let the users search and comb through a collection of recipes dating also to the 17th century. Two main ways to query the data, either inputting recipe names or ingredient names. Along with the interface a collection of microservices were also implemented in the backend.', 
-                    source : require('@/assets/3.png') 
+                    source : require('@/assets/pictures/3_gif.gif') 
                 }, 
                 {
                     id : '4', 
                     description : 'Pesquisa Remédios e os seus Ingredients APP<br>A complimentary piece to the website, built using React Native. ', 
-                    source : require('@/assets/4.gif') 
+                    source : require('@/assets/pictures/4.gif') 
                 }, 
                 {
                     id : '5', 
                     description : 'UV Forecast<br>Website that was constructed with two goals in mind, one to fetch data from an external API and show it on screen in an orderly fashing, and the other to display the results, daily, of the machine learning algorithm implemented in order to predict for each district the UV rating. A Recurrent Neural Network (LSTM) was implemented and trained in order to predict the target.', 
-                    source : require('@/assets/5.png') 
+                    source : require('@/assets/pictures/5.png') 
                 },
             ],             
         }

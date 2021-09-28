@@ -3,7 +3,7 @@
           
           <v-avatar size="130">
             <v-img
-                :src="require('@/assets/face.jpg')"
+                :src="require('@/assets/pictures/face.jpg')"
             ></v-img>
           </v-avatar>
           <h2 class="aboutMeTextColor"> João <span class="blue--text">Nunes</span> </h2>
