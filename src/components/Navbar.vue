@@ -4,17 +4,17 @@
                     <!-- 11 cols dedicadas para os 4 principais e 1 para a escolha da linguagem -->
                     <v-col cols="12"  align="center" justify="center"> 
 
-                        <v-btn text @click="$vuetify.goTo('#about-me')"> About me </v-btn>
+                        <v-btn text @click="$vuetify.goTo('#about-me')"> {{ $t('navbar.about') }} </v-btn>
 
-                        <v-btn text @click="$vuetify.goTo('#works')"> Works </v-btn>
+                        <v-btn text @click="$vuetify.goTo('#works')"> {{ $t('navbar.works') }} </v-btn>
 
-                        <v-btn text @click="$vuetify.goTo('#contact')"> Contact </v-btn>
+                        <v-btn text @click="$vuetify.goTo('#contact')"> {{ $t('navbar.contact') }} </v-btn>
 
-                        <v-btn text @click="$vuetify.goTo('#ending')"> Resume </v-btn>
+                        <v-btn text @click="$vuetify.goTo('#ending')"> {{ $t('navbar.ending') }} </v-btn>
 
                         <v-menu>
                             <template v-slot:activator="{ on, attrs }">
-                                <v-btn text v-bind="attrs" v-on="on"> Language </v-btn>
+                                <v-btn text v-bind="attrs" v-on="on"> {{ $t('navbar.language') }} </v-btn>
                             </template>
                             <v-list>
                                 <v-list-item v-for="(language,index) in list_languages" :key="index">

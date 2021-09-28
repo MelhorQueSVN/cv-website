@@ -116,7 +116,7 @@
                     :class="[$vuetify.breakpoint.smAndDown ? 'display-3' : 'display-4']"
                     class="font-weight-black"
                   >
-                    Thank you<br>
+                    {{ $t('ending.title') }} <br>
                   </span>
                   
                   <div class="pt-3">        
@@ -124,7 +124,7 @@
                       :class="[$vuetify.breakpoint.smAndDown ? 'display-0': 'display-1']"
                       class="font-weight-light"
                     >
-                      You can download the full curriculum <br>
+                      {{ $t('ending.subtitle') }} <br>
                     </span>
                   </div>
 

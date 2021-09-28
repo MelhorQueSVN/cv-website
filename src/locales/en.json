@@ -1,5 +1,12 @@
 {
   "message": "hello i18n !!", 
+  "navbar" : { 
+    "about" : "About me", 
+    "works" : "Works", 
+    "contact" : "Contact", 
+    "ending" : "Ending", 
+    "language" : "Language"
+  },
   "home" : { 
     "subtitle" : "Software Engineer Student at Universidade do Minho", 
     "subsubtitle" : "Hi I'm João Nunes and I'm currently finishing my masters degree and Universidade do Minho"
@@ -86,5 +93,9 @@
       "rule-email-invalid" : "Please enter a valid email address", 
       "rule-message-text" : "This field is required"
     }
+  }, 
+  "ending" : { 
+    "title" : "Thank you", 
+    "subtitle" : "You can download the full curriculum"
   }
 }
