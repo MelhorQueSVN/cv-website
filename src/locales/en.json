@@ -74,6 +74,8 @@
   }, 
   "contact" : { 
     "title" : "Contact Me", 
+    "sucess-message" : "Sucess sending the email!", 
+    "fail-message" : "Failed to send the email, please confirm all the fields!",
     "form" : { 
       "name" : "Name", 
       "email" : "Email", 

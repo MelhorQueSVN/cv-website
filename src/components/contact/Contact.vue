@@ -12,8 +12,8 @@
     
     <v-row justify="center">
       <v-col cols="12" md="4">
-        <v-alert v-model="showAlertSucess" type="success" dismissible @input="closeSucess"> Sucess sending the email!</v-alert>
-        <v-alert v-model="showAlertFailure" type="error" dismissible @input="closeFailure"> Failed to send the email, please confirm all the fields!</v-alert>
+        <v-alert v-model="showAlertSucess" type="success" dismissible @input="closeSucess"> {{ $t('contact.sucess-message') }} </v-alert>
+        <v-alert v-model="showAlertFailure" type="error" dismissible @input="closeFailure"> {{ $t('contact.fail-message') }} </v-alert>
       </v-col>
     </v-row>
   
