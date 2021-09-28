@@ -1,7 +1,7 @@
 <template>
   <v-col cols="12" md="11" class="aboutMefirstColColor" align="center"> 
     
-    <h2 class="contactTextColor"> Contact Me </h2>
+    <h2 class="contactTextColor"> {{ $t('contact.title') }} </h2>
     <v-divider class="dividerColorWhite"> </v-divider>
     
     <v-row class="pt-6"> 
