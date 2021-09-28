@@ -72,8 +72,7 @@
                       
                       <v-avatar size="130">
                         <v-img
-                            class="elevation-6"
-                            :src="require('@/assets/default-pic.png')"
+                            :src="require('@/assets/face.jpg')"
                         ></v-img>
                       </v-avatar>
 
@@ -746,14 +745,14 @@
 
                   <div class="pt-3">        
                     
-                    <v-btn text> 
+                    <v-btn text href="CV_JoaoNunes_Pt.pdf" download> 
                       Português 
                       <v-icon right>
                         mdi-file-pdf-box 
                       </v-icon>
                     </v-btn>
                     
-                    <v-btn text> 
+                    <v-btn text href="CV_JoaoNunes_En.pdf" download> 
                       English
                       <v-icon right>
                         mdi-file-pdf-box 
@@ -833,7 +832,7 @@ export default {
           {id : '5', description : 'UV Forecast<br>Website that was constructed with two goals in mind, one to fetch data from an external API and show it on screen in an orderly fashing, and the other to display the results, daily, of the machine learning algorithm implemented in order to predict for each district the UV rating. A Recurrent Neural Network (LSTM) was implemented and trained in order to predict the target.' , source : require('@/assets/5.png') },
         ], 
         showAlertSucess: false, 
-        showAlertFailure : false
+        showAlertFailure : false, 
       }
     },
     beforeDestroy () {
