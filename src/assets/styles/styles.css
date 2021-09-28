@@ -27,10 +27,14 @@
   }
   
 .dividerColorWhite {
-      border-color: rgb(255, 252, 252) !important; 
+    border-color: rgb(255, 252, 252) !important; 
   }
   
 .dividerColorBlack {
-      border-color: rgb(0, 0, 0) !important; 
+    border-color: rgb(0, 0, 0) !important; 
   }
+
+.contactBackColor { 
+    background-color: #d8d8d8;   
+}
   
