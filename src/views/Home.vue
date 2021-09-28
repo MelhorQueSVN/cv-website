@@ -173,8 +173,8 @@
 <script>
 // @ is an alias to /src
 import Navbar from '@/components/Navbar.vue'
-import SideBar from '@/components/sidebar/SideBar.vue'
-import MainBar from '@/components/mainbar/MainBar.vue'
+import SideBar from '@/components/aboutme/sidebar/SideBar.vue'
+import MainBar from '@/components/aboutme/mainbar/MainBar.vue'
 import Gallery from '@/components/Gallery.vue'
 import Contact from '@/components/contact/Contact.vue'
 

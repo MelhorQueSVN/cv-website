@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import AboutMe from '@/components/mainbar/AboutMe.vue' 
-import Education from '@/components/mainbar/Education.vue'
-import Experience from '@/components/mainbar/Experience.vue'
-import Skills from '@/components/mainbar/Skills.vue'
+import AboutMe from '@/components/aboutme/mainbar/AboutMe.vue' 
+import Education from '@/components/aboutme/mainbar/Education.vue'
+import Experience from '@/components/aboutme/mainbar/Experience.vue'
+import Skills from '@/components/aboutme/mainbar/Skills.vue'
 
 export default {
     components : { 

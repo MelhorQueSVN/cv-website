@@ -23,11 +23,11 @@
 </template>
 
 <script>
-import GenInfo from '@/components/sidebar/GenInfo.vue'
-import Social from '@/components/sidebar/Social.vue'
-import Activities from '@/components/sidebar/Activities.vue'
-import InterSkills from '@/components/sidebar/InterSkills.vue'
-import Languages from '@/components/sidebar/Languages.vue'
+import GenInfo from '@/components/aboutme/sidebar/GenInfo.vue'
+import Social from '@/components/aboutme/sidebar/Social.vue'
+import Activities from '@/components/aboutme/sidebar/Activities.vue'
+import InterSkills from '@/components/aboutme/sidebar/InterSkills.vue'
+import Languages from '@/components/aboutme/sidebar/Languages.vue'
 
 export default {
   components : { 
