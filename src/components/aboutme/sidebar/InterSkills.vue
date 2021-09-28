@@ -6,13 +6,13 @@
           <v-row class="pt-3">      
               <v-col cols="12" md="4">                          
                 <v-btn color="white" small outlined rounded>
-                  Responsability
+                  {{ $t('aboutme.sidebar.interskills.responsability') }}
                 </v-btn>                                                     
               </v-col>
               
               <v-col cols="12" md="8">       
                 <v-btn color="white" small outlined rounded>
-                  Willing collaborator and team oriented
+                  {{ $t('aboutme.sidebar.interskills.collaborator') }}
                 </v-btn>                  
               </v-col>      
           </v-row>
@@ -20,13 +20,13 @@
           <v-row>                          
               <v-col cols="12" md="4">                          
                 <v-btn color="white" small outlined rounded>
-                  Clear communicator
+                  {{ $t('aboutme.sidebar.interskills.communicator') }}
                 </v-btn>                                                     
               </v-col>
               
               <v-col cols="12" md="8">       
                 <v-btn color="white" small outlined rounded>
-                  Acceptive of constructive feedback
+                  {{ $t('aboutme.sidebar.interskills.feedback') }}
                 </v-btn>                  
               </v-col>
           </v-row>
@@ -34,13 +34,13 @@
           <v-row>                        
               <v-col cols="12" md="6">                          
                 <v-btn color="white" small outlined rounded>
-                  Flexible and very willing to learn
+                  {{ $t('aboutme.sidebar.interskills.flexible') }}
                 </v-btn>                                                     
               </v-col>
               
               <v-col cols="12" md="6">       
                 <v-btn color="white" small outlined rounded>
-                  Humor and lightheartedness
+                  {{ $t('aboutme.sidebar.interskills.humor') }}
                 </v-btn>                  
               </v-col>                       
           </v-row>
@@ -48,13 +48,13 @@
           <v-row>                        
               <v-col cols="12" md="4">                          
                 <v-btn color="white" small outlined rounded>
-                  Good listener
+                  {{ $t('aboutme.sidebar.interskills.listener') }}
                 </v-btn>                                                     
               </v-col>
               
               <v-col cols="12" md="6">       
                 <v-btn color="white" small outlined rounded>
-                  Patient when dealing with others
+                  {{ $t('aboutme.sidebar.interskills.patient') }}
                 </v-btn>                  
               </v-col>                       
           </v-row>

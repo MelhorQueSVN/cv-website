@@ -12,7 +12,7 @@
             <v-icon left>
               mdi-book-open-page-variant
             </v-icon>
-             Reading
+             {{ $t('aboutme.sidebar.activity.reading') }}
           </v-btn>
         </v-col> 
         
@@ -21,7 +21,7 @@
             <v-icon left>
               mdi-dumbbell
             </v-icon>
-             Training
+             {{ $t('aboutme.sidebar.activity.training') }}
           </v-btn>
         </v-col> 
         
@@ -30,7 +30,7 @@
             <v-icon left>
               mdi-music
             </v-icon>
-             Music
+             {{ $t('aboutme.sidebar.activity.music') }}
           </v-btn>
         </v-col> 
         
@@ -39,7 +39,7 @@
             <v-icon left>
               mdi-gamepad
             </v-icon>
-             Games
+             {{ $t('aboutme.sidebar.activity.games') }}
           </v-btn>
         </v-col> 
       
@@ -53,7 +53,7 @@
             <v-icon left>
               mdi-hiking
             </v-icon>
-             Hiking
+             {{ $t('aboutme.sidebar.activity.hiking') }}
           </v-btn>
         </v-col> 
         
@@ -62,7 +62,7 @@
             <v-icon left>
               mdi-file-document-edit
             </v-icon>
-              Projects
+              {{ $t('aboutme.sidebar.activity.projects') }}
           </v-btn>
         </v-col> 
         
@@ -71,7 +71,7 @@
             <v-icon left>
               mdi-movie-open
             </v-icon>
-             Movies
+             {{ $t('aboutme.sidebar.activity.movies') }}
           </v-btn>
         </v-col> 
         
@@ -80,7 +80,7 @@
             <v-icon left>
               mdi-basketball
             </v-icon>
-             Sports
+             {{ $t('aboutme.sidebar.activity.sports') }}
           </v-btn>
         </v-col> 
       

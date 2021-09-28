@@ -7,7 +7,7 @@
             ></v-img>
           </v-avatar>
           <h2 class="aboutMeTextColor"> João <span class="blue--text">Nunes</span> </h2>
-          <h2 class="aboutMeTextColor"> An aspiring web developer </h2>
+          <h2 class="aboutMeTextColor"> {{ $t('aboutme.aspiring') }} </h2>
           
           <GenInfo />
 

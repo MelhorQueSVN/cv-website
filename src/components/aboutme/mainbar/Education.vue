@@ -3,7 +3,7 @@
         <!-- Educação -->
         <v-row> 
           <v-col class="text-left"> 
-              <h4> Education </h4>
+              <h4> {{ $t('aboutme.mainbar.education.title') }} </h4>
           </v-col>
         </v-row> 
         
@@ -19,7 +19,7 @@
           
           <v-col cols="8" md="10" class="text-left"> 
             <p> Escola Básica e Secundária de Lustosa </p> 
-            <p> Sciences and Technologies </p>
+            <p> {{ $t('aboutme.mainbar.education.course_sec') }} </p>
           </v-col>                     
         
         </v-row> 
@@ -32,7 +32,7 @@
          
           <v-col cols="8" md="10" class="text-left"> 
             <p> Universidade do Minho </p> 
-            <p> Integrated Masters Degree in Informatics Engineering </p>
+            <p> {{ $t('aboutme.mainbar.education.degree') }} </p>
           </v-col>                     
         
         </v-row> 

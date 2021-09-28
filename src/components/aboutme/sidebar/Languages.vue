@@ -16,7 +16,7 @@
               >
                 {{ valuePt }}
               </v-progress-circular>
-              <p class="aboutMeTextColor pt-2"> Fluent Portuguese </p>
+              <p class="aboutMeTextColor pt-2"> {{ $t('aboutme.sidebar.languages.pt') }} </p>
             </v-col>
            
             <v-col>
@@ -29,7 +29,7 @@
               >
                 {{ valueEn }}
               </v-progress-circular>
-              <p class="aboutMeTextColor pt-2"> Advanced English (CAE) </p>
+              <p class="aboutMeTextColor pt-2"> {{ $t('aboutme.sidebar.languages.en') }} </p>
             </v-col>
            
             <v-col>
@@ -42,7 +42,7 @@
               >
                 {{ valueSp }}
               </v-progress-circular>
-              <p class="aboutMeTextColor pt-2"> Spanish </p>
+              <p class="aboutMeTextColor pt-2"> {{ $t('aboutme.sidebar.languages.sp') }} </p>
             </v-col>
           
           </v-row>

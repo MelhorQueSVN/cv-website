@@ -65,10 +65,10 @@
         
         <v-col cols="10" md="10" class="text-left aboutMeTextColor">
           <v-row align="center">
-            Birthday
+            {{ $t('aboutme.sidebar.info.birthday') }}
           </v-row> 
           <v-row align="center">
-            22 November 1998
+            {{ $t('aboutme.sidebar.info.date') }}
           </v-row> 
         </v-col>                    
       </v-row>
@@ -88,7 +88,7 @@
         
         <v-col cols="10" md="10" class="text-left aboutMeTextColor">
           <v-row align="center">
-            Location
+            {{ $t('aboutme.sidebar.info.location') }}
           </v-row> 
           <v-row align="center">
             Lousada, Portugal

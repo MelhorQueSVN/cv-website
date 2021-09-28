@@ -1,6 +1,6 @@
 <template>
     <div>          
-        <h3 class="aboutMeTextColor text-left pt-6"> You can also find me on </h3>
+        <h3 class="aboutMeTextColor text-left pt-6"> {{ $t('aboutme.sidebar.social.findme') }} </h3>
         <v-divider class="dividerColorWhite"> </v-divider>
         <v-row> 
             

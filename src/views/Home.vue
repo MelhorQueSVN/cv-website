@@ -26,7 +26,7 @@
                       :class="[$vuetify.breakpoint.smAndDown ? 'display-1': 'display-2']"
                       class="font-weight-light"
                     >
-                      Software Engineer Student at Universidade do Minho <br>
+                      {{ $t('home.subtitle') }} <br>
                     </span>
                   </div>
                   
@@ -35,7 +35,7 @@
                       :class="[$vuetify.breakpoint.smAndDown ? 'display-0': 'display-1']"
                       class="font-weight-light"
                     >
-                      Hi I'm João Nunes and I'm currently finishing my masters degree and Universidade do Minho <br>
+                     {{ $t('home.subsubtitle') }} <br>
                     </span>
                   </div>
 
