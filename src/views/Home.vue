@@ -936,19 +936,15 @@ export default {
 
     methods : { 
         openAlertSucess() { 
-          console.log("RECEBI EVENTO DE SUCESSO")
           this.showAlertSucess = true
         }, 
         openAlertFailure() { 
-          console.log("RECEBI EVENTO DE INSUCESSO")
           this.showAlertFailure = true         
         },
         closeSucess() { 
-          console.log("FECHEI ALERT SUCESSO")
           this.showAlertSucess = false
         }, 
         closeFailure() { 
-          console.log("FECHEI ALERT FAILURE")
           this.showAlertFailure = false
         }
     }
