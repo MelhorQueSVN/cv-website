@@ -81,125 +81,9 @@
           <v-container>
             
             <v-row justify="center">
-              <v-col cols="12" md="11" class="worksColor" align="center"> 
-                <h2> Some of my works </h2>
-                <v-divider> </v-divider>
-
-                <v-row class="pt-6"> 
-                  
-                  <v-col cols="12" md="6"> 
-                    <v-hover v-slot="{ hover }">
-                      <v-img
-                        :src="gallery[0].source"
-                        :lazy-src="gallery[0].source"
-                        aspect-ratio="2"
-                      > 
-                        <v-expand-transition>
-                          <div
-                            v-if="hover"
-                            class="d-flex transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
-                            style="height: 100%;"
-                            v-html="gallery[0].description"
-                          >
-                          </div>
-                        </v-expand-transition>
-                      </v-img>
-                    </v-hover>
-                  </v-col>
-
-                  <v-col cols="12" md="6"> 
-                    <v-hover v-slot="{ hover }">
-                      <v-img
-                        :src="gallery[1].source"
-                        :lazy-src="gallery[1].source"
-                        aspect-ratio="2"
-                      > 
-                        <v-expand-transition>
-                          <div
-                            v-if="hover"
-                            class="d-flex transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
-                            style="height: 100%;"
-                            v-html="gallery[1].description"
-                          >
-                          </div>
-                        </v-expand-transition>
-                      </v-img>
-                    </v-hover>
-                  </v-col>
-                  
-                  <!-- Uma coluna dividida em 2 linhas para cada imagem -->
-                  <v-col cols="12" md="6"> 
-                    
-                    <v-row> 
-                      <v-col>
-                        <v-hover v-slot="{ hover }">
-                          <v-img
-                            :src="gallery[2].source"
-                            :lazy-src="gallery[2].source"
-                            aspect-ratio="2"
-                          > 
-                            <v-expand-transition>
-                              <div
-                                v-if="hover"
-                                class="d-flex transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
-                                style="height: 100%;"
-                                v-html="gallery[2].description"
-                              >
-                              </div>
-                            </v-expand-transition>
-                          </v-img>
-                        </v-hover> 
-                      </v-col>
-                    </v-row>
-
-                    <v-row> 
-                      <v-col>
-                        <v-hover v-slot="{ hover }">
-                          <v-img
-                            :src="gallery[4].source"
-                            :lazy-src="gallery[4].source"
-                            aspect-ratio="2"
-                          > 
-                            <v-expand-transition>
-                              <div
-                                v-if="hover"
-                                class="d-flex transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
-                                style="height: 100%;"
-                                v-html="gallery[4].description"
-                              >
-                              </div>
-                            </v-expand-transition>
-                          </v-img>
-                        </v-hover>
-                      </v-col>
-                    </v-row>
-
-                  </v-col>
-
-                  <v-col cols="12" md="6"> 
-                    <v-hover v-slot="{ hover }">
-                      <v-img
-                        :src="gallery[3].source"
-                        :lazy-src="gallery[3].source"
-                        aspect-ratio="0"
-                        width="60%"
-                      > 
-                        <v-expand-transition>
-                          <div
-                            v-if="hover"
-                            class="d-flex transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-3 white--text"
-                            style="height: 100%;"
-                            v-html="gallery[3].description"
-                          > 
-                          </div>
-                        </v-expand-transition>
-                      </v-img>
-                    </v-hover>
-                  </v-col>
-             
-                </v-row>
-
-              </v-col>
+            
+              <Gallery />
+            
             </v-row>
           
           </v-container>
@@ -209,24 +93,9 @@
       <section id="contact"> 
           <v-container>          
             <v-row justify="center">
-              <v-col cols="12" md="11" class="aboutMefirstColColor" align="center"> 
-                <h2 class="contactTextColor"> Contact Me </h2>
-                <v-divider class="dividerColorWhite"> </v-divider>
-
-                <v-row class="pt-6"> 
-                  <v-col> 
-                    <ContactForm @sucess="openAlertSucess" @failure="openAlertFailure "/>
-                  </v-col> 
-                </v-row>
-
-                <v-row justify="center">
-                  <v-col cols="12" md="4">
-                    <v-alert v-model="showAlertSucess" type="success" dismissible @input="closeSucess"> Sucess sending the email!</v-alert>
-                    <v-alert v-model="showAlertFailure" type="error" dismissible @input="closeFailure"> Failed to send the email, please confirm all the fields!</v-alert>
-                  </v-col>
-                </v-row>
               
-              </v-col>
+              <Contact />
+
             </v-row>
           </v-container>
       </section>
@@ -304,17 +173,19 @@
 <script>
 // @ is an alias to /src
 import Navbar from '@/components/Navbar.vue'
-import ContactForm from '@/components/ContactForm.vue'
 import SideBar from '@/components/sidebar/SideBar.vue'
 import MainBar from '@/components/mainbar/MainBar.vue'
+import Gallery from '@/components/Gallery.vue'
+import Contact from '@/components/contact/Contact.vue'
 
 export default {
   name: 'Home',
   components : { 
     Navbar, 
-    ContactForm, 
     SideBar, 
-    MainBar
+    MainBar, 
+    Gallery, 
+    Contact
   }, 
   data () {
       return {
