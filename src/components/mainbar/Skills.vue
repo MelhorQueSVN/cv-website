@@ -75,8 +75,101 @@ export default {
 
     data() {
         return {
-
+            intervalJava : {},
+            intervalJavascript : {},
+            intervalVueJs : {},
+            intervalNodeJs : {},
+            intervalC : {},
+            intervalPython : {},
+            intervalCy : {},
+            intervalMongo : {},
+            intervalSql : {},
+            intervalReactN : {},
+            valueJava : 0, 
+            valueJavascript : 0,
+            valueVueJs : 0,
+            valueNodeJs : 0,
+            valueC : 0, 
+            valuePython : 0, 
+            valueCy : 0, 
+            valueMongo : 0, 
+            valueSql : 0, 
+            valueReactN : 0
         }
+    }, 
+
+    mounted() {
+        
+        this.intervalJava = setInterval(() => {
+            if (this.valueJava === 70) {
+            return (this.valueJava = 70)
+            }
+            this.valueJava += 10
+        }, 800)
+
+        this.intervalJavascript = setInterval(() => {
+            if (this.valueJavascript === 70) {
+            return (this.valueJavascript = 70)
+            }
+            this.valueJavascript += 10
+        }, 800)
+
+        this.intervalVueJs = setInterval(() => {
+            if (this.valueVueJs === 80) {
+            return (this.valueVueJs = 80)
+            }
+            this.valueVueJs += 10
+        }, 800)
+
+        this.intervalNodeJs = setInterval(() => {
+            if (this.valueNodeJs === 70) {
+            return (this.valueNodeJs = 70)
+            }
+            this.valueNodeJs += 10
+        }, 800)
+
+        this.intervalC = setInterval(() => {
+            if (this.valueC === 50) {
+            return (this.valueC = 50)
+            }
+            this.valueC += 10
+        }, 800)
+
+        this.intervalPython = setInterval(() => {
+            if (this.valuePython === 70) {
+            return (this.valuePython = 70)
+            }
+            this.valuePython += 10
+        }, 800)
+
+        this.intervalCy = setInterval(() => {
+            if (this.valueCy === 70) {
+            return (this.valueCy = 70)
+            }
+            this.valueCy += 10
+        }, 800)
+
+        this.intervalMongo = setInterval(() => {
+            if (this.valueMongo === 70) {
+            return (this.valueMongo = 70)
+            }
+            this.valueMongo += 10
+        }, 800)
+
+        this.intervalSql = setInterval(() => {
+            if (this.valueSql === 60) {
+            return (this.valueSql = 60)
+            }
+            this.valueSql += 10
+        }, 800)
+
+        this.intervalReactN = setInterval(() => {
+            if (this.valueReactN === 60) {
+            return (this.valueReactN = 60)
+            }
+            this.valueReactN += 10
+        }, 800)        
+    
     }
 
 }

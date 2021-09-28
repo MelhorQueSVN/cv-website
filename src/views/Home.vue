@@ -70,7 +70,8 @@
                     <!-- v-col não tem xs, portanto com cols="12" faz fill do ecrã, depois devices com md para cima fica apenas com 4 -->
                     <SideBar />
 
-                    <MainBar />
+                    <MainBar /> 
+
                   </v-row>
             </v-container> 
           </div>     
@@ -305,13 +306,15 @@
 import Navbar from '@/components/Navbar.vue'
 import ContactForm from '@/components/ContactForm.vue'
 import SideBar from '@/components/sidebar/SideBar.vue'
+import MainBar from '@/components/mainbar/MainBar.vue'
 
 export default {
   name: 'Home',
   components : { 
     Navbar, 
     ContactForm, 
-    SideBar
+    SideBar, 
+    MainBar
   }, 
   data () {
       return {

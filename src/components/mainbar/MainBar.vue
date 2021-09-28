@@ -8,7 +8,7 @@
         <Experience />
 
         <Skills /> 
-                          
+
     </v-col>  
 </template>
 
@@ -16,12 +16,14 @@
 import AboutMe from '@/components/mainbar/AboutMe.vue' 
 import Education from '@/components/mainbar/Education.vue'
 import Experience from '@/components/mainbar/Experience.vue'
+import Skills from '@/components/mainbar/Skills.vue'
 
 export default {
     components : { 
         AboutMe, 
         Education, 
-        Experience
+        Experience, 
+        Skills
     }
 }
 </script>
