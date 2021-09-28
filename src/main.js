@@ -5,9 +5,10 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+require('@/assets/styles/styles.css')
 
 new Vue({
   vuetify,
-  router,
+  router, 
   render: h => h(App)
 }).$mount('#app')

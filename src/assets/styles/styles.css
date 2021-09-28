@@ -1,0 +1,36 @@
+.aboutMefirstColColor { 
+    background-color: #3c3c3c;
+  }
+  
+.hoverTransitionColor { 
+    background-color: #3c3c3c;
+  }
+  
+.aboutMesecondColColor { 
+    background-color: #d8d8d8;
+  } 
+  
+.worksColor { 
+    background-color: #d3d2d2;  
+  }
+  
+.alertColor { 
+    background-color: #2fd80d;  
+  }
+  
+.aboutMeTextColor { 
+    color : white
+  }
+  
+.contactTextColor { 
+    color : white
+  }
+  
+.dividerColorWhite {
+      border-color: rgb(255, 252, 252) !important; 
+  }
+  
+.dividerColorBlack {
+      border-color: rgb(0, 0, 0) !important; 
+  }
+  
