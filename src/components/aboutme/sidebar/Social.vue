@@ -10,7 +10,7 @@
             </v-btn>
             </v-col>
             <v-col> 
-            <v-btn icon color="white" href="https://pt.linkedin.com/" target="_blank">  
+            <v-btn icon color="white" href="https://www.linkedin.com/in/jo%C3%A3o-nunes-11031b222/" target="_blank">  
                 <v-icon> mdi-linkedin</v-icon>
             </v-btn>
             </v-col>

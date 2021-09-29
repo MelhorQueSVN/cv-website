@@ -4,6 +4,7 @@
           <v-avatar size="130">
             <v-img
                 :src="require('@/assets/pictures/face.jpg')"
+                :lazy-src="require('@/assets/pictures/face.jpg')"
             ></v-img>
             
             <template v-slot:placeholder>
