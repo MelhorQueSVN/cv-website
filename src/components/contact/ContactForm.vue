@@ -34,16 +34,21 @@ export default {
         return { 
             allFieldsValid : false, 
             name : "", 
-            rules_name : [v => !!v || this.$i18n.t('contact.form.rule-name') ],
             email : "",
-            rules_email : [
-                e => !!e || this.$i18n.t('contact.form.rule-email-empty'), 
-                e => /.+@.+/.test(e) || this.$i18n.t('contact.form.rule-email-invalid')
-            ],
             message : "",
-            rules_message : [ 
-                m => !!m || this.$i18n.t('contact.form.rule-message-text')
-            ] 
+        }
+    },
+
+    // computed para tornar as regras reativas à mudança de linguagem
+    computed : { 
+        rules_name() { 
+            return [v => !!v || this.$t('contact.form.rule-name') ]
+        }, 
+        rules_email() { 
+            return [e => !!e || this.$t('contact.form.rule-email-empty'), e => /.+@.+/.test(e) || this.$t('contact.form.rule-email-invalid')]
+        }, 
+        rules_message() { 
+            return [ m => !!m || this.$i18n.t('contact.form.rule-message-text')] 
         }
     },
 
