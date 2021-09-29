@@ -18,7 +18,7 @@
                 v-if="hover"
                 class="d-flex transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
                 style="height: 100%;"
-                v-html="gallery[0].description"
+                v-html="translatedDescription(gallery[0].id)"
               >
               </div>
             </v-expand-transition>
@@ -38,7 +38,7 @@
                 v-if="hover"
                 class="d-flex transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
                 style="height: 100%;"
-                v-html="gallery[1].description"
+                v-html="translatedDescription(gallery[1].id)"
               >
               </div>
             </v-expand-transition>
@@ -61,7 +61,7 @@
                     v-if="hover"
                     class="d-flex transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
                     style="height: 100%;"
-                    v-html="gallery[2].description"
+                    v-html="translatedDescription(gallery[2].id)"
                   >
                   </div>
                 </v-expand-transition>
@@ -82,7 +82,7 @@
                     v-if="hover"
                     class="d-flex transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
                     style="height: 100%;"
-                    v-html="gallery[4].description"
+                    v-html="translatedDescription(gallery[4].id)"
                   >
                   </div>
                 </v-expand-transition>
@@ -105,7 +105,7 @@
                 v-if="hover"
                 class="d-flex transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-3 white--text"
                 style="height: 100%;"
-                v-html="gallery[3].description"
+                v-html="translatedDescription(gallery[3].id)"
               > 
               </div>
             </v-expand-transition>
@@ -124,32 +124,34 @@ export default {
             gallery : [
                 {
                     id : '1', 
-                    description : this.$i18n.t('works.img-1-desc'), 
                     source : require('@/assets/pictures/1.png') 
                 },
                 {
                     id : '2', 
-                    description : this.$i18n.t('works.img-2-desc'), 
                     source : require('@/assets/pictures/2.png') 
                 }, 
                 {
                     id : '3', 
-                    description : this.$i18n.t('works.img-3-desc'), 
                     source : require('@/assets/pictures/3_gif.gif') 
                 }, 
                 {
                     id : '4', 
-                    description : this.$i18n.t('works.img-4-desc'), 
                     source : require('@/assets/pictures/4.gif') 
                 }, 
                 {
                     id : '5', 
-                    description : this.$i18n.t('works.img-5-desc'), 
                     source : require('@/assets/pictures/5.png') 
                 },
             ],             
         }
+    },  
+
+    methods : { 
+      translatedDescription : function(id) { 
+        return this.$i18n.t('works.img-' + id + '-desc')
+      }
     }
+
 }
 </script>
 
