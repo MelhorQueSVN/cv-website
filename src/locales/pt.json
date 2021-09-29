@@ -1,0 +1,101 @@
+{
+    "message": "hello i18n !!", 
+    "navbar" : { 
+      "about" : "Acerca de Mim", 
+      "works" : "Trabalhos", 
+      "contact" : "Contacto", 
+      "ending" : "Fim", 
+      "language" : "Linguagem"
+    },
+    "home" : { 
+      "subtitle" : "Estudante de Engenharia Informática na Univerisdade do Minho", 
+      "subsubtitle" : "Olá sou o João Nunes e estou a acabar o mestrado na Universidade do Minho"
+    }, 
+    "aboutme" : { 
+      "aspiring" : "An aspiring developer", 
+      "sidebar" : { 
+          "info" : { 
+            "birthday" : "Data de Nascimento", 
+            "date" : "22 Novembro 1998", 
+            "location" : "Localização"
+          }, 
+          "social" : { 
+            "findme" : "Podes me encontrar"
+          }, 
+          "activity" : { 
+            "reading" : "Ler", 
+            "training" : "Treinar", 
+            "music" : "Música", 
+            "games" : "Jogos", 
+            "hiking" : "Caminhadas", 
+            "projects" : "Projetos", 
+            "movies" : "Filmes", 
+            "sports" : "Desportos"
+          }, 
+          "interskills" : { 
+            "responsability" : "Responsabilidade",
+            "collaborator" : "Gosto de trabalhar em equipa", 
+            "communicator" : "Bom comunicador", 
+            "feedback" : "Aprecidor de feedback construtivo", 
+            "flexible" : "Fléxivel e pronto a aprender", 
+            "humor" : "Bem humorado e atencioso", 
+            "listener" : "Bom ouvinte", 
+            "patient" : "Paciente em lidar com outras pessoas"
+          }, 
+          "languages" : {
+            "pt" : "Português", 
+            "en" : "Inglês (CAE)", 
+            "sp" : "Espanhol"
+          }
+        }, 
+        "mainbar" : { 
+          "aboutme" : { 
+            "title" : "Acerca de Mim", 
+            "first_par" : "O meu nome é João Nunes, e sou um estudante de engenharia informática atualmente a acabar o mestrado integrado na Universidade do Minho.",
+            "second_par" : "Optei por escolher Sistemas Inteligentes bem como Engenharia do Conhecimento como os perfis no mestrado. O primeiro perfil pode ser caraterizado como um perfil especializado em machine learning, onde foi dado um ênfase particular em algoritmos standard de machine learning, supervisionados e não supervisionados. Para além de machine learning o pefil também se focou na criação de sistemas multiagente, onde a comunicação entre os agentes era um dos aspetos fulcrais. O segundo perfil mencionado essencialmente focava-se em ensinar os princípios por detrás da exploração e administração de bases de dados.",
+            "third_par" : "Em relação à dissertação, onde estou em vias de acabar, o principal objetivo passa pela criação de uma ferramenta de extração, através do uso de métodos de machine learning, de forma a filtrar no texto os dados desejados dos indesejados. Após a extração da informação pertinente, estes dados extraídos são depois estruturados na forma de uma ontologia. A ontologia é depois explorada através de um website simples que foi construído com o intuito de elaborar interrogações a esta estrutura."
+        }, 
+          "education" : { 
+            "title" : "Educação", 
+            "course_sec" : "Ciências e Tecnologias", 
+            "degree" : "Mestrado Integrado em Engenharia Informática"
+          }, 
+          "experience" : { 
+            "title" : "Experiência", 
+            "collab" : "Colaborador no Departamento Pedagógico", 
+            "first_expl" : "Esclarecimento de dúvidas a alunos de anos transatos;", 
+            "second_expl" : "Ajuda na organização de atividades."
+          }, 
+          "skills" : { 
+            "title" : "Principais Skills"
+          }
+        }
+    }, 
+    "works" : { 
+      "title" : "Alguns dos meus trabalhos", 
+      "img-1-desc" : "Betting Spree<br>Uma rede social dedicada à prática das apostas desportivas, a juntar a isto foi também elaborada uma casa de apostas onde os utilizadores poderiam efetuar e partilhar as apostas em grupos ou com amigos na vertente social da plataforma. Os dados fornecidos à casa de apostas eram atualizados diariamente através de uma API externa através de um serviço criado para esse efeito.",
+      "img-2-desc" : "Projeto Tommi<br>Uma interface de um motor de busca criado com o intuito de facilmente permitir aos seus utilizadores explorar um largo conjunto de documentos que datam ao século 17. Foram criadas várias maneiras de explorar e interrogar os dados, juntamente com uma página de resultados intuitiva.",
+      "img-3-desc" : "Pesquisa de Remédios e os seus Ingredientes<br>Um motor de busca construido com o intuito de facilmente e de forma intuitiva permitir os utilizadores consultar os dados mais pertinentes de um coleção de receitas que datam ao século 17. Duas maneiras principais de explorar os dados, através do nome das receitas ou ingredientes. Juntamente com a interface web foram também construidos microserviços no backend.",
+      "img-4-desc" : "Pesquisa Remédios e os seus Ingredients APP<br>Uma aplicação complementar ao website para dispostivos Android, construído através do React Native.", 
+      "img-5-desc" : "UV Forecast<br>Website e scripts construídos com duas finalidades em mente, a primeira sendo coletar um conjunto de dados de uma API externa, e depois de estruturá-los são então apresentados numa página de uma maneira ordenada. O segundo objetivo passa pela apresentação de um forecast de intensidade UV por distrito em Portugal Continental, para tal foi elaborado um script de forma a treinar uma rede neuronal recorrente (LSTM) e depois prever diariamente este target."
+    }, 
+    "contact" : { 
+      "title" : "Contacto", 
+      "sucess-message" : "Envio de email bem sucedido!", 
+      "fail-message" : "Falha ao enviar o email, por favor confirme todos os campos!",
+      "form" : { 
+        "name" : "Nome", 
+        "email" : "Email", 
+        "text" : "Texto", 
+        "submit" : "Submeter", 
+        "rule-name" : "Este campo é necessário", 
+        "rule-email-empty" : "Este campo é necessário", 
+        "rule-email-invalid" : "Por favor coloque um endereço email válido.", 
+        "rule-message-text" : "Este campo é necessário"
+      }
+    }, 
+    "ending" : { 
+      "title" : "Obrigado", 
+      "subtitle" : "Download do currículo"
+    }
+  }

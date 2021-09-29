@@ -46,7 +46,22 @@ export default {
     methods : { 
         
         changeLanguage(title) {
-            console.log("Change to: " + title)
+            let locale = ""
+            if(title == "English"){ 
+                locale = 'en'
+                
+                this.$i18n.locale = locale
+                this.$router.push({
+                    params: { lang: locale }
+                })
+            } else { 
+                locale = 'pt'
+                
+                this.$i18n.locale = locale
+                this.$router.push({
+                    params: { lang: locale }
+                })
+            }
         }
     }
 }
