@@ -1,7 +1,7 @@
 <template>
     <div>  
       
-      <h3 class="aboutMeTextColor text-left pt-6"> Info </h3>
+      <h3 class="aboutMeTextColor text-left pt-6 pt-md-12"> Info </h3>
       <v-divider class="dividerColorWhite"> </v-divider>
       
       <!-- EMAIL -->

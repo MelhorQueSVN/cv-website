@@ -9,7 +9,7 @@
         
         <!-- Consoante o tamanho do ecrã muda o width -->
         <v-divider v-if="$vuetify.breakpoint.smAndDown" width="30%" > </v-divider> 
-        <v-divider v-else width="10%" > </v-divider> 
+        <v-divider v-else width="15%" > </v-divider> 
         
         <v-row class="pt-6"> 
           
