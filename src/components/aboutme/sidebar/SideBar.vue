@@ -5,6 +5,20 @@
             <v-img
                 :src="require('@/assets/pictures/face.jpg')"
             ></v-img>
+            
+            <template v-slot:placeholder>
+              <v-row
+                class="fill-height ma-0"
+                align="center"
+                justify="center"
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                ></v-progress-circular>
+            </v-row>
+          </template>
+          
           </v-avatar>
           <h2 class="aboutMeTextColor"> João <span class="blue--text">Nunes</span> </h2>
           <h2 class="aboutMeTextColor"> {{ $t('aboutme.aspiring') }} </h2>

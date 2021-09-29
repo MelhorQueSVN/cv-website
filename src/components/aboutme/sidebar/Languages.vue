@@ -25,7 +25,7 @@
                 :size="100"
                 :width="15"
                 :value="valueEn"
-                color="red"
+                color="blue"
               >
                 {{ valueEn }}
               </v-progress-circular>
@@ -38,7 +38,7 @@
                 :size="100"
                 :width="15"
                 :value="valueSp"
-                color="yellow"
+                color="blue"
               >
                 {{ valueSp }}
               </v-progress-circular>
