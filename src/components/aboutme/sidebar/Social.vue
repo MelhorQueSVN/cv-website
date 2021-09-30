@@ -6,22 +6,12 @@
             
             <v-col> 
             <v-btn icon color="white" href="https://github.com/MelhorQueSVN" target="_blank">  
-                <v-icon> mdi-github</v-icon>
+                <v-icon size="30"> mdi-github</v-icon>
             </v-btn>
             </v-col>
             <v-col> 
             <v-btn icon color="white" href="https://www.linkedin.com/in/jo%C3%A3o-nunes-11031b222/" target="_blank">  
-                <v-icon> mdi-linkedin</v-icon>
-            </v-btn>
-            </v-col>
-            <v-col> 
-            <v-btn icon color="white" href="https://www.facebook.com/joao.filipe.16940/" target="_blank">  
-                <v-icon> mdi-facebook</v-icon>
-            </v-btn>
-            </v-col>
-            <v-col> 
-            <v-btn icon color="white" href="https://www.instagram.com/joaoflpnunes/" target="_blank">  
-                <v-icon> mdi-instagram</v-icon>
+                <v-icon size="30"> mdi-linkedin</v-icon>
             </v-btn>
             </v-col>
         </v-row>
