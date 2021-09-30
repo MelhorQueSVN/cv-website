@@ -2,22 +2,22 @@
     <v-form v-model="allFieldsValid">
         <v-container >
             <v-row justify="center">
-                <v-col cols="12" md="4" class="contactBackColor">
+                <v-col cols="12" md="6" class="contactBackColor">
                     <v-text-field :label="$t('contact.form.name')" v-model="name" clearable :rules="rules_name"> </v-text-field>
                 </v-col>
             </v-row>
             <v-row justify="center" class="pt-0">
-                <v-col cols="12" md="4" class="contactBackColor">
+                <v-col cols="12" md="6" class="contactBackColor">
                     <v-text-field :label="$t('contact.form.email')" v-model="email" clearable :rules="rules_email" > </v-text-field>
                 </v-col>
             </v-row>
             <v-row justify="center" class="pt-0">
-                <v-col cols="12" md="4" class="contactBackColor">
+                <v-col cols="12" md="6" class="contactBackColor">
                     <v-textarea clearable rows="4" clear-icon="mdi-close-circle" :label="$t('contact.form.text')" v-model="message" :rules="rules_message"></v-textarea>
                 </v-col>
             </v-row>
             <v-row justify="center" class="pt-0">
-                <v-col class="contactBackColor" cols="12" md="4">
+                <v-col class="contactBackColor" cols="12" md="6">
                     <v-btn :disabled="!allFieldsValid" text @click="sendEmail()"> {{ $t('contact.form.submit') }} </v-btn>
                 </v-col>
             </v-row>
