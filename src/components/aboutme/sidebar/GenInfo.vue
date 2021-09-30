@@ -45,7 +45,7 @@
             Website
           </v-row> 
           <v-row align="center">
-            joao-nunes-cv.pt
+            joaonunes.netlify.app
           </v-row> 
         </v-col>                    
       </v-row>
