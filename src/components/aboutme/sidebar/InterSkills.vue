@@ -4,59 +4,64 @@
         <v-divider class="dividerColorWhite"> </v-divider>
           
           <v-row class="pt-3">      
-              <v-col cols="12" md="4">                          
-                <v-btn color="white" small outlined rounded>
-                  {{ $t('aboutme.sidebar.interskills.responsability') }}
-                </v-btn>                                                     
+
+              <v-col cols="12" md="6">       
+                <h4 class="white--text">
+                  {{ $t('aboutme.sidebar.interskills.feedback') }}
+                </h4>                  
               </v-col>
-              
-              <v-col cols="12" md="8">       
-                <v-btn color="white" small outlined rounded>
-                  {{ $t('aboutme.sidebar.interskills.collaborator') }}
-                </v-btn>                  
-              </v-col>      
+
+
+              <v-col cols="12" md="6">                          
+                <h4 class="white--text"> 
+                  {{ $t('aboutme.sidebar.interskills.responsability') }} 
+                </h4>                                             
+              </v-col>     
           </v-row>
           
           <v-row>                          
-              <v-col cols="12" md="4">                          
-                <v-btn color="white" small outlined rounded>
+              <v-col cols="12" md="5">                          
+                <h4 class="white--text">
                   {{ $t('aboutme.sidebar.interskills.communicator') }}
-                </v-btn>                                                     
+                </h4>                                                     
               </v-col>
-              
-              <v-col cols="12" md="8">       
-                <v-btn color="white" small outlined rounded>
-                  {{ $t('aboutme.sidebar.interskills.feedback') }}
-                </v-btn>                  
-              </v-col>
+
+              <v-col cols="12" md="7">       
+                <h4 class="white--text">
+                  {{ $t('aboutme.sidebar.interskills.collaborator') }}
+                </h4>                 
+              </v-col>   
+
           </v-row>
           
           <v-row>                        
               <v-col cols="12" md="6">                          
-                <v-btn color="white" small outlined rounded>
+                <h4 class="white--text">
                   {{ $t('aboutme.sidebar.interskills.flexible') }}
-                </v-btn>                                                     
+                </h4>                                                     
               </v-col>
               
               <v-col cols="12" md="6">       
-                <v-btn color="white" small outlined rounded>
+                <h4 class="white--text">
                   {{ $t('aboutme.sidebar.interskills.humor') }}
-                </v-btn>                  
+                </h4>                  
               </v-col>                       
           </v-row>
           
           <v-row>                        
-              <v-col cols="12" md="4">                          
-                <v-btn color="white" small outlined rounded>
-                  {{ $t('aboutme.sidebar.interskills.listener') }}
-                </v-btn>                                                     
-              </v-col>
               
               <v-col cols="12" md="6">       
-                <v-btn color="white" small outlined rounded>
+                <h4 class="white--text">
                   {{ $t('aboutme.sidebar.interskills.patient') }}
-                </v-btn>                  
-              </v-col>                       
+                </h4>                  
+              </v-col>   
+
+              <v-col cols="12" md="6">                          
+                <h4 class="white--text">
+                  {{ $t('aboutme.sidebar.interskills.listener') }}
+                </h4>                                                     
+              </v-col>
+                                  
           </v-row>
     </div>
 </template>
