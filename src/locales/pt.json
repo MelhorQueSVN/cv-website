@@ -97,5 +97,8 @@
     "ending" : { 
       "title" : "Obrigado", 
       "subtitle" : "Download do currículo"
+    }, 
+    "footer" : { 
+      "text" : "Feito com Vue.js juntamente com Vuetify UI Framework"
     }
   }
