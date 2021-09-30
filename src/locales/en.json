@@ -53,7 +53,7 @@
           "title" : "About Me",
           "first_par" : "My name is João Nunes, and I'm a software developer currently finishing masters degree in Informatics Engineering at Universidade do Minho in Portugal.", 
           "second_par" : "I opted to choose Intelligent Systems as well as Knowledge Engineering as my Msc profiles. The first profile can be characterized as a machine learning course, where a lot of focus was given to the standard machine learning algorithms wether they be supervised or unsupervised. As well as machine learning, the profile also focused on the creation of multiagent systems, where communication between agents was imperious. The second profile essentialy focused on teaching the principles in database exploration and administration.",
-          "third_par" : "In regards to my thesis, which I'm currently finishing, the goal of my thesis is to develop an extraction tool, using machine learning, in order to filter all the desired data from various documents. After extracting the data, the data is strucutured in the form of an ontology. A simple website was then constructed in order to query all the data within the ontology."
+          "third_par" : "In regards to my thesis, which I'm currently finishing, the goal is to develop an extraction tool, using machine learning, in order to filter all the desired data from various documents. After extracting the data, the data is strucutured in the form of an ontology. A simple website was then constructed in order to query all the data within the ontology."
         }, 
         "education" : { 
           "title" : "Education", 
@@ -72,12 +72,12 @@
       }
   }, 
   "works" : { 
-    "title" : "Some of my works", 
-    "img-1-desc" : "Betting Spree<br>A social network dedicated to the betting enviroment, completed with a bookmaker where users could make and then share the bets that they made in groups or with friends. The shared bets could then be copied should the user want to. The bookmaker data was fetched each day from an external API through a dedicated service created to that effect.", 
-    "img-2-desc" : "Projeto Tommi<br>A search engine interface built with the intent on easily letting users search through a large collection of documents dating to the 17th century. Multiple to query and explore the data were constructed, along with a comprehensive results page.", 
-    "img-3-desc" : "Pesquisa de Remédios e os seus Ingredientes<br>A search engine that was built in order to let the users search and comb through a collection of recipes dating also to the 17th century. Two main ways to query the data, either inputting recipe names or ingredient names. Along with the interface a collection of microservices were also implemented in the backend.", 
-    "img-4-desc" : "Pesquisa de Remédios e os seus Ingredients APP<br>A complimentary piece to the website, built using React Native.", 
-    "img-5-desc" : "UV Forecast<br>Website that was constructed with two goals in mind, one to fetch data from an external API and show it on screen in an orderly fashion, and the other to display the results, daily, of the machine learning algorithm implemented in order to predict for each district the UV rating. A Recurrent Neural Network (LSTM) was implemented and trained in order to predict the target."
+    "title" : "Some of my projects", 
+    "img-1-desc" : "<span class='blue--text'>Betting Spree</span><br>A social network dedicated to the betting enviroment, completed with a bookmaker where users could make and then share the bets that they made in groups or with friends. The shared bets could then be copied should the user want to. The bookmaker data was fetched each day from an external API through a dedicated service created to that effect.", 
+    "img-2-desc" : "<span class='blue--text'>Projeto Tommi</span><br>A search engine interface built with the intent on easily letting users search through a large collection of documents dating to the 17th century. Multiple to query and explore the data were constructed, along with a comprehensive results page.", 
+    "img-3-desc" : "<span class='blue--text'>Pesquisa de Remédios e os seus Ingredientes</span><br>A search engine that was built in order to let the users search and comb through a collection of recipes dating also to the 17th century. Two main ways to query the data, either inputting recipe names or ingredient names. Along with the interface a collection of microservices were also implemented in the backend.", 
+    "img-4-desc" : "<span class='blue--text'>Pesquisa de Remédios e os seus Ingredients APP</span><br>A complimentary piece to the website, built using React Native.", 
+    "img-5-desc" : "<span class='blue--text'>UV Forecast</span><br>Website that was constructed with two goals in mind, one to fetch data from an external API and show it on screen in an orderly fashion, and the other to display the results, daily, of the machine learning algorithm implemented in order to predict for each district the UV rating. A Recurrent Neural Network (LSTM) was implemented and trained in order to predict the target."
   }, 
   "contact" : { 
     "title" : "Contact Me", 

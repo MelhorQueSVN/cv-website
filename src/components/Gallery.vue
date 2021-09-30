@@ -16,7 +16,7 @@
             <v-expand-transition>
               <div
                 v-if="hover"
-                class="d-flex transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
+                class="transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
                 style="height: 100%;cursor: pointer;"
                 v-html="translatedDescription(gallery[0].id)"
                 onclick="window.open('https://github.com/CC-CloudCode', '_blank').focus()"
@@ -51,7 +51,7 @@
             <v-expand-transition>
               <div
                 v-if="hover"
-                class="d-flex transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
+                class="transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
                 style="height: 100%;cursor: pointer;"
                 v-html="translatedDescription(gallery[1].id)"
                 onclick="window.open('https://github.com/MelhorQueSVN/TommiAnalise', '_blank').focus()"
@@ -89,7 +89,7 @@
                 <v-expand-transition>
                   <div
                     v-if="hover"
-                    class="d-flex transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
+                    class="transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
                     style="height: 100%;cursor: pointer;"
                     v-html="translatedDescription(gallery[2].id)"
                     onclick="window.open('https://github.com/MelhorQueSVN/Tese-WEB-APP', '_blank').focus()"
@@ -125,7 +125,7 @@
                 <v-expand-transition>
                   <div
                     v-if="hover"
-                    class="d-flex transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
+                    class="transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
                     style="height: 100%;cursor: pointer;"
                     v-html="translatedDescription(gallery[4].id)"
                     onclick="window.open('https://github.com/MelhorQueSVN/SA-TP2', '_blank').focus()"
@@ -163,7 +163,7 @@
             <v-expand-transition>
               <div
                 v-if="hover"
-                class="d-flex transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-3 white--text"
+                class="transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-3 white--text"
                 style="height: 100%;cursor: pointer;"
                 v-html="translatedDescription(gallery[3].id)"
                 onclick="window.open('https://github.com/MelhorQueSVN/Tese-Mobile-App', '_blank').focus()"
