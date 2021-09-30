@@ -1,7 +1,7 @@
 <template>
     <div> 
       
-      <h3 class="aboutMeTextColor text-left pt-3"> Things I enjoy in my free time </h3>
+      <h3 class="aboutMeTextColor text-left pt-3"> {{ $t('aboutme.sidebar.activity.title') }} </h3>
       <v-divider class="dividerColorWhite"> </v-divider> 
       
       <!-- 1a fila de hobbies -->

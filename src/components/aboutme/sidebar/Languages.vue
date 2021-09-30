@@ -1,7 +1,7 @@
 <template>
     <div>   
 
-        <h3 class="aboutMeTextColor text-left pt-3"> Languages </h3>
+        <h3 class="aboutMeTextColor text-left pt-3"> {{ $t('aboutme.sidebar.languages.title') }} </h3>
         <v-divider class="dividerColorWhite"> </v-divider> 
           
           <v-row class="pt-3"> 

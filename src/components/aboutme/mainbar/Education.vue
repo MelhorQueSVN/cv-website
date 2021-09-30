@@ -14,26 +14,26 @@
         <v-row class="pt-6"> 
           
           <v-col cols="4" md="2" class="text-left"> 
-            <p> 2013-2016 </p>
-          </v-col>
-          
-          <v-col cols="8" md="10" class="text-left"> 
-            <p> Escola Básica e Secundária de Lustosa </p> 
-            <p> {{ $t('aboutme.mainbar.education.course_sec') }} </p>
-          </v-col>                     
-        
-        </v-row> 
-        
-        <v-row class="mt-0"> 
-         
-          <v-col cols="4" md="2" class="text-left"> 
             <p> 2016-present </p>
           </v-col>
          
           <v-col cols="8" md="10" class="text-left"> 
             <p> Universidade do Minho </p> 
             <p> {{ $t('aboutme.mainbar.education.degree') }} </p>
-          </v-col>                     
+          </v-col>                       
+        
+        </v-row> 
+        
+        <v-row class="mt-0"> 
+         
+          <v-col cols="4" md="2" class="text-left"> 
+            <p> 2013-2016 </p>
+          </v-col>
+          
+          <v-col cols="8" md="10" class="text-left"> 
+            <p> Escola Básica e Secundária de Lustosa </p> 
+            <p> {{ $t('aboutme.mainbar.education.course_sec') }} </p>
+          </v-col>                   
         
         </v-row> 
     

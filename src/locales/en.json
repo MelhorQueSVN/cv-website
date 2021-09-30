@@ -23,6 +23,7 @@
           "findme" : "You can also find me on"
         }, 
         "activity" : { 
+          "title" : "Things I enjoy in my free time",
           "reading" : "Reading", 
           "training" : "Training", 
           "music" : "Music", 
@@ -43,6 +44,7 @@
           "patient" : "Patient when dealing with others"
         }, 
         "languages" : {
+          "title" : "Languages",
           "pt" : "Portuguese", 
           "en" : "English (CAE)", 
           "sp" : "Spanish"

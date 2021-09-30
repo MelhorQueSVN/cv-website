@@ -23,6 +23,7 @@
             "findme" : "Podes me encontrar"
           }, 
           "activity" : { 
+            "title" : "Ativades no tempo livre",
             "reading" : "Ler", 
             "training" : "Treinar", 
             "music" : "Música", 
@@ -43,6 +44,7 @@
             "patient" : "Paciente em lidar com outras pessoas"
           }, 
           "languages" : {
+            "title" : "Linguagens",
             "pt" : "Português", 
             "en" : "Inglês (CAE)", 
             "sp" : "Espanhol"
