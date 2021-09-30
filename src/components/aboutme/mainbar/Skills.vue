@@ -26,7 +26,7 @@
           </v-col>
           
           <v-col cols="12" md="6"> 
-              <p> VueJs </p>
+              <p> Vue.js </p>
                <v-progress-linear color="light-blue" height="25" :value="valueVueJs"> <strong class="aboutMeTextColor"> {{valueVueJs + "%"}} </strong> </v-progress-linear>                         
           </v-col>
          
@@ -36,7 +36,7 @@
           </v-col>
          
           <v-col cols="12" md="6"> 
-              <p> NodeJs </p>
+              <p> Node.js </p>
                <v-progress-linear color="light-blue" height="25" :value="valueNodeJs"> <strong class="aboutMeTextColor"> {{valueNodeJs + "%"}} </strong> </v-progress-linear>                         
           </v-col>
          
@@ -51,17 +51,17 @@
           </v-col>
           
           <v-col cols="12" md="6"> 
-              <p> Cypher </p>
+              <p> Neo4j </p>
                <v-progress-linear color="light-blue" height="25" :value="valueCy"> <strong class="aboutMeTextColor"> {{valueCy + "%"}} </strong> </v-progress-linear>                         
           </v-col>
           
           <v-col cols="12" md="6"> 
-              <p> Mongo </p>
+              <p> MongoDB </p>
                <v-progress-linear color="light-blue" height="25" :value="valueMongo"> <strong class="aboutMeTextColor"> {{valueMongo + "%"}} </strong> </v-progress-linear>                         
           </v-col>
           
           <v-col cols="12" md="6"> 
-              <p> Sql </p>
+              <p> SQL </p>
                <v-progress-linear color="light-blue" height="25" :value="valueSql"> <strong class="aboutMeTextColor"> {{valueSql + "%"}} </strong> </v-progress-linear>                         
           </v-col>
         
