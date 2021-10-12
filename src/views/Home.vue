@@ -164,9 +164,19 @@
           </v-img>
         
         </v-row>
+
+        <!-- fill-height para ocupar o restante tamanho até ao final do ecrã -->
+        <v-container fill-height> 
+          <!-- remove paddings -->
+          <v-row no-gutters justify="center">
+            <v-col align="center"> 
+              <v-btn text x-small onclick="window.open('https://github.com/MelhorQueSVN/cv-website', '_blank').focus()"> {{ $t('footer.text') }} </v-btn>
+            </v-col>
+          </v-row>
+        </v-container>
+
       </section>
-
-
+   
   </div>
 </template>
 
