@@ -5,6 +5,7 @@
     <h2> {{ $t('works.title') }} </h2>
     <v-divider> </v-divider>
     
+    <!-- smaller fonts from sm devices -->
     <div v-if="$vuetify.breakpoint.smAndDown"> 
       <v-row class="pt-6"> 
         
@@ -189,10 +190,46 @@
             </v-img>
           </v-hover>
         </v-col>
-  
+
+        <v-col cols="12" md="6"> 
+          <v-hover v-slot="{ hover }">
+            <v-img
+              :src="gallery[5].source"
+              :lazy-src="gallery[5].source"
+              aspect-ratio="2"
+            > 
+              <v-expand-transition>
+                <div
+                  v-if="hover"
+                  class="transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal white--text"
+                  style="height: 100%;cursor: pointer;"
+                  v-html="translatedDescription(gallery[5].id)"
+                  onclick="window.open(https://github.com/MelhorQueSVN/company-website-alternate', '_blank').focus()"
+                > 
+                </div>
+              </v-expand-transition>
+
+              <template v-slot:placeholder>
+                <v-row
+                  class="fill-height ma-0"
+                  align="center"
+                  justify="center"
+                >
+                  <v-progress-circular
+                    indeterminate
+                    color="grey lighten-5"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
+
+            </v-img>
+          </v-hover>
+        </v-col>
+
       </v-row>
     </div>
     
+    <!-- md devices and up includes propper typography (font size) -->
     <div v-else>
       <v-row class="pt-6"> 
         
@@ -377,7 +414,40 @@
             </v-img>
           </v-hover>
         </v-col>
-  
+
+        <v-col cols="12" md="6"> 
+            <v-hover v-slot="{ hover }">
+              <v-img
+                :src="gallery[5].source"
+                :lazy-src="gallery[5].source"
+                aspect-ratio="2"
+              > 
+                <v-expand-transition>
+                  <div
+                    v-if="hover"
+                    class="transition-fast-in-fast-out hoverTransitionColor darken-2 v-card--reveal display-1 white--text"
+                    style="height: 100%;cursor: pointer;"
+                    v-html="translatedDescription(gallery[5].id)"
+                    onclick="window.open('https://github.com/MelhorQueSVN/company-website-alternate', '_blank').focus()"
+                  >
+                  </div>
+                </v-expand-transition>
+                <template v-slot:placeholder>
+                  <v-row
+                    class="fill-height ma-0"
+                    align="center"
+                    justify="center"
+                  >
+                    <v-progress-circular
+                      indeterminate
+                      color="grey lighten-5"
+                    ></v-progress-circular>
+                  </v-row>
+                </template>
+              </v-img>
+            </v-hover>
+        </v-col>
+
       </v-row>
     </div>
   </v-col>
@@ -407,7 +477,12 @@ export default {
                 {
                     id : '5', 
                     source : require('@/assets/pictures/5.png') 
-                },
+                }, 
+                { 
+                    id : '6', 
+                    source : require('@/assets/pictures/6.gif')
+
+                }
             ],             
         }
     },  
